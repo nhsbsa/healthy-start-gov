@@ -1,44 +1,22 @@
-
-{% extends "layout.html" %}
-
-{% block pageTitle %}
-  GOV.UK Prototype Kit
-{% endblock %}
-
-{% block content %}
-
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  {% extends "layout.html" %} {% block pageTitle %} GOV.UK Prototype Kit {% endblock %} {% block content %}
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-xl">
-        The GOV.UK Prototype Kit
-        <span class="govuk-caption-xl">{{releaseVersion}}</span>
-      </h1>{{releaseVersion | log }}
-      <p>
-        This kit lets you rapidly create HTML prototypes of GOV.UK services.
-      </p>
-
-      <p>
-        It contains all you need to prototype anything from simple static pages to complex, data-driven transactions.
-      </p>
-
-      <h2 class="govuk-heading-m">About this page</h2>
-
-      <p>We recommend you add links to your prototype to this page, rather than delete it.
-        You'll find this page in the kit at '/app/views/index.html'.</p>
-
-      <p>You can change the service name by editing the file '/app/config.js'.</p>
-
-      <h2 class="govuk-heading-m">Examples and documentation</h2>
-
+      <h1 class="govuk-heading-xl">Get help to buy food and milk <span class="govuk-caption-xl">(Healthy Start)</span></h1>{{releaseVersion | log }}
+      <p>The Healthy Start scheme allows eligible applicants to Get help to buy food and milk.</p>
+      <p>The 'Apply' service allows applicants to apply for the service.</p>
+      <h2 class="govuk-heading-m">Prototype</h2>
       <ul class="govuk-list govuk-list--bullet">
         <li>
-          <a href="/docs/tutorials-and-examples">Example pages and documentation</a>
-        </li>
-        <li>
-          <a href="https://design-system.service.gov.uk">GOV.UK Design System</a>
+          <a href="/overview">Guidance Pages</a>
         </li>
       </ul>
     </div>
-</div>
-
-{% endblock %}
+  </div>{% endblock %}
+</body>
+</html>

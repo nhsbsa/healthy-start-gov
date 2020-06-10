@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  {% extends "layout.html" %} {% block pageTitle %} Start page example {% endblock %} {% block header %} <!-- Blank header with no service name for the start page -->
+   {{ govukHeader() }} {% endblock %} {% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link"
+            href="https://www.gov.uk/">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link"
+            href="https://www.gov.uk/browse/childcare-parenting">Childcare and parenting</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link"
+            href="https://www.gov.uk/browse/childcare-parenting/financial-help-children">Financial help if you have children</a>
+      </li>
+    </ol>
+  </div>{% endblock %} {% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">Get help to buy food and milk <span class="govuk-caption-xl govuk-!-margin-top-2">(Healthy Start)</span></h1>
+      <aside class="part-navigation-container"
+             role="complementary">
+        <nav aria-label="Pages in this guide"
+             class="gem-c-contents-list"
+             data-module="track-click"
+             role="navigation">
+          <h2 class="gem-c-contents-list__title">Contents</h2>
+          <ol class="gem-c-contents-list__list">
+            <li aria-current="true"
+                class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed gem-c-contents-list__list-item--active">Overview</li>
+            <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
+              <a class="gem-c-contents-list__link govuk-link"
+                  href="eligibility">Eligibility</a>
+            </li>
+            <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
+              <a class="gem-c-contents-list__link govuk-link"
+                  href="what-youll-get">What you'll get</a>
+            </li>
+            <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
+              <a class="gem-c-contents-list__link govuk-link"
+                  href="what-you-can-buy">What you can buy</a>
+            </li>
+            <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
+              <a class="gem-c-contents-list__link govuk-link"
+                  href="how-to-apply">How to apply</a>
+            </li>
+            <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
+              <a class="gem-c-contents-list__link govuk-link"
+                  href="get-help-with-your-claim">Get help with your claim</a>
+            </li>
+            <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
+              <a class="gem-c-contents-list__link govuk-link"
+                  href="terms-and-conditions">Terms and conditions</a>
+            </li>
+          </ol>
+        </nav>
+      </aside>
+    </div>
+  </div>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="part-title">Overview</h1>
+      <p>If you’re pregnant or have a child under 4, you can get help to buy healthy food and milk.</p>
+      <p>If you’re eligible, you’ll be paid money into your bank account to spend on food and milk.</p>
+      <p>You can also collect:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>pregnancy vitamins</li>
+        <li>breastfeeding vitamins</li>
+        <li>vitamins for children aged 6 months to 5 years old</li>
+      </ul>
+      <p>This service won't affect any of your other benefits</p>
+      <h2 class="govuk-heading-m">If you live in Scotland</h2>
+      <p>You can get help from <a href="https://www.mygov.scot/best-start-grant-best-start-foods/">Best Start Foods</a> instead</p>
+      <nav aria-label="Pagination"
+           class="gem-c-pagination"
+           role="navigation">
+        <ul class="gem-c-pagination__list"
+            data-module="track-click">
+          <li class="gem-c-pagination__item gem-c-pagination__item--next">
+            <a class="gem-c-pagination__link"
+                href="eligibility"
+                rel="next"><span class="gem-c-pagination__link-title"><svg class="gem-c-pagination__link-icon"
+                 height="13"
+                 viewbox="0 0 17 13"
+                 width="17"
+                 xmlns="http://www.w3.org/2000/svg">
+            <path d="m10.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path></svg> <span class="gem-c-pagination__link-text">Next</span></span> <span class=
+            "gem-c-pagination__link-divider visually-hidden">:</span> <span class="gem-c-pagination__link-label">Eligibility</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="govuk-grid-column-one-third">
+      <aside class="app-related-items"
+             role="complementary">
+        <h2 class="govuk-heading-s govuk-!-margin-top-2"
+            id="subsection-title">Related content</h2>
+        <nav aria-labelledby="subsection-title"
+             role="navigation">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="https://www.gov.uk/child-benefit">Claim Child Benefit</a>
+            </li>
+            <li>
+              <a href="https://www.gov.uk/maternity-allowance">Maternity Allowance</a>
+            </li>
+            <li>
+              <a href="https://www.gov.uk/sure-start-maternity-grant">Sure Start Maternity Grant</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+    </div>
+  </div>{% endblock %}
+</body>
+</html>
